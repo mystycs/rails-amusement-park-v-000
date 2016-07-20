@@ -1,0 +1,10 @@
+Welcome to the show page.
+
+  <% if flash[:notice] %>
+    <div class="notice"><%= flash[:notice] %></div>
+  <% end %>
+
+<%= "ADMIN" if @user.admin %>
+User information: <%= @user.inspect %> <br>
+Tickets: <%= @user.tickets %>
+Mood: <%= @user.mood %>
